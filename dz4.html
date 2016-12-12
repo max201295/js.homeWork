@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<!-- задание номер 1 -->
+	<script>
+		function min(a,b) {
+		return Math.min(0,10);
+		}
+		console.log(min(0,10));
+	</script>
+
+	<script>
+		function min(a,b) {
+		return Math.min(0,-10);
+		}
+		console.log(min(0,-10));
+	</script>
+
+	<!-- задание номер 2 -->
+
+<script>
+
+		function countChar(string, simbol) {
+
+			var string = prompt ("Введите ваше слово");
+			var simbol = prompt ("Введите искомый символ");
+			var counter = 0;
+
+			console.log (string);
+
+			for(var i = 0; i <= string.length; i++) {
+				
+				if (string.charAt(i) == simbol) {
+					console.log("Ваш символ " + simbol + " по счету номер " + (i+1) );
+					++counter;
+					}
+
+				if (string.charAt(i) !== simbol && i == string.length && counter == 0,) {
+					console.log("Вашего символа нет в слове");
+				}
+
+				if (i == string.length && counter != 0) {
+					console.log("Ваш символ " + simbol + " повторяется в слове " + counter " раз(а)" );
+				}
+			}
+		}
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
